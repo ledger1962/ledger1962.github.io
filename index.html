@@ -1,0 +1,1184 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>丹祖宗女王vk-人物档案与作品追踪</title>
+<meta name="description" content="丹祖宗女王vk的持续追踪档案：整理其公开视频节点、社区讨论分层、作品类型差异与观看指南，收录近30天内可核对更新、榜单变化与常见疑问，标注事实与推测界限。">
+<meta name="keywords" content="丹祖宗女王vk">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232a1533'/%3E%3Cpath d='M32 12l5 14 14 5-14 5-5 14-5-14-14-5 14-5z' fill='%23e8b75a'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#221826;
+  --ink-2:#4a3d51;
+  --ink-3:#7a6b82;
+  --paper:#faf7f4;
+  --paper-2:#f2ebe6;
+  --card:#ffffff;
+  --line:#e2d8d2;
+  --brand:#5a2f63;
+  --brand-deep:#3c1b44;
+  --brand-soft:#f0e6f2;
+  --accent:#c0822c;
+  --accent-soft:#fbf1de;
+  --ok:#2f6b4f;
+  --warn:#8a4a1f;
+  --radius:14px;
+  --radius-s:8px;
+  --shadow:0 1px 2px rgba(52,28,60,.06),0 8px 24px rgba(52,28,60,.07);
+  --shadow-s:0 1px 2px rgba(52,28,60,.08);
+  --sp:clamp(14px,2.2vw,22px);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --sticky-h:96px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-h)}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);
+  background:var(--paper);line-height:1.75;
+  font-size:16px;-webkit-text-size-adjust:100%;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 .85em}
+ul,ol{margin:0 0 .9em;padding-left:1.25em}
+li{margin:.25em 0}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{width:min(1180px,100% - 2*var(--sp));margin-inline:auto}
+
+/* ---------- 公告条 ---------- */
+.announce{
+  position:sticky;top:0;z-index:60;
+  background:var(--brand-deep);color:#f4ecf6;
+  font-size:13.5px;letter-spacing:.01em;
+}
+.announce .wrap{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:7px 0}
+.announce .tag{
+  background:var(--accent);color:#2a1533;font-weight:700;
+  padding:1px 8px;border-radius:99px;font-size:12px;flex:none;
+}
+.announce b{font-weight:600;color:#f0d9a8}
+
+/* ---------- 页头 ---------- */
+.site-head{
+  position:sticky;top:38px;z-index:55;
+  background:rgba(250,247,244,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.site-head .bar{
+  display:flex;align-items:center;gap:14px;padding:10px 0;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:38px;height:38px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-text strong{font-size:17px;letter-spacing:.02em;color:var(--brand-deep)}
+.brand-text span{font-size:11.5px;color:var(--ink-3);letter-spacing:.08em}
+.nav-main{display:flex;gap:2px;flex-wrap:wrap;flex:1;min-width:0}
+.nav-main a{
+  font-size:14.5px;color:var(--ink-2);padding:6px 10px;border-radius:var(--radius-s);
+  transition:background .15s,color .15s;white-space:nowrap;
+}
+.nav-main a:hover,.nav-main a.active{background:var(--brand-soft);color:var(--brand-deep);text-decoration:none}
+.head-tools{display:flex;gap:8px;align-items:center;flex:none}
+.search-wrap{position:relative;display:flex;align-items:center}
+.search-wrap input{
+  font:inherit;font-size:14px;padding:7px 10px 7px 32px;width:180px;
+  border:1px solid var(--line);border-radius:99px;background:#fff;color:var(--ink);
+  transition:width .18s,border-color .15s;
+}
+.search-wrap input:focus{width:220px;border-color:var(--brand);outline:none}
+.search-wrap svg{position:absolute;left:9px;width:15px;height:15px;color:var(--ink-3);pointer-events:none}
+.search-feedback{
+  position:absolute;right:0;top:calc(100% + 6px);z-index:70;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);
+  box-shadow:var(--shadow);padding:8px 12px;font-size:13px;color:var(--warn);
+  display:none;white-space:nowrap;
+}
+.search-feedback.on{display:block}
+.btn-menu{
+  display:none;font:inherit;font-size:14px;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius-s);padding:7px 12px;color:var(--ink);cursor:pointer;
+}
+.btn-menu:hover{background:var(--brand-soft)}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(1100px 420px at 82% -8%, #efe0e9 0%, rgba(250,247,244,0) 62%),
+    radial-gradient(700px 330px at 4% 108%, #f6ecdd 0%, rgba(250,247,244,0) 64%),
+    var(--paper);
+  border-bottom:1px solid var(--line);
+}
+.hero .wrap{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  gap:clamp(18px,4vw,48px);align-items:center;
+  padding:clamp(30px,5vw,64px) 0 clamp(28px,4vw,54px);
+}
+.hero-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.chip{
+  font-size:12.5px;padding:3px 10px;border-radius:99px;
+  background:var(--accent-soft);color:#6b4512;border:1px solid #efd8b0;
+}
+.chip.alt{background:var(--brand-soft);color:var(--brand-deep);border-color:#dcc9e2}
+.hero h1{
+  font-size:clamp(30px,5.2vw,50px);letter-spacing:.01em;color:var(--brand-deep);
+  margin-bottom:14px;
+}
+.hero-lead{font-size:clamp(15px,1.7vw,17.5px);color:var(--ink-2);max-width:34em;margin-bottom:20px}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:7px;font-size:15px;font-weight:600;
+  padding:10px 18px;border-radius:99px;border:1px solid transparent;
+  transition:transform .15s,background .15s,box-shadow .15s;cursor:pointer;
+}
+.btn:hover{transform:translateY(-2px);text-decoration:none}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:var(--shadow-s)}
+.btn-primary:hover{background:var(--brand-deep)}
+.btn-ghost{background:#fff;color:var(--brand-deep);border-color:var(--line)}
+.btn-ghost:hover{background:var(--brand-soft)}
+.hero-stats{
+  display:flex;gap:clamp(12px,3vw,30px);flex-wrap:wrap;
+  margin-top:24px;padding-top:18px;border-top:1px dashed var(--line);
+}
+.hero-stats div{min-width:88px}
+.hero-stats b{display:block;font-size:22px;color:var(--brand-deep);line-height:1.2}
+.hero-stats span{font-size:12.5px;color:var(--ink-3)}
+.hero-art{position:relative;display:flex;justify-content:center}
+.hero-art svg{width:min(100%,360px);height:auto;filter:drop-shadow(0 14px 30px rgba(60,27,68,.14))}
+
+/* ---------- 布局 ---------- */
+.layout{
+  display:grid;grid-template-columns:minmax(0,1fr) 280px;
+  gap:clamp(20px,3.4vw,40px);align-items:start;
+  padding:clamp(26px,4vw,44px) 0;
+}
+.side{
+  position:sticky;top:calc(38px + 58px + 10px);
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow-s);padding:16px;
+}
+.side h2{font-size:14px;letter-spacing:.06em;color:var(--ink-3);margin-bottom:10px;font-weight:600}
+.side nav{display:flex;flex-direction:column;gap:2px;margin-bottom:16px}
+.side nav a{
+  font-size:14px;color:var(--ink-2);padding:6px 9px;border-radius:var(--radius-s);
+  border-left:3px solid transparent;transition:background .15s,color .15s;
+}
+.side nav a:hover{background:var(--paper-2);text-decoration:none}
+.side nav a.active{background:var(--brand-soft);color:var(--brand-deep);border-left-color:var(--brand);font-weight:600}
+.side-note{
+  font-size:13px;color:var(--ink-3);border-top:1px dashed var(--line);padding-top:12px;line-height:1.7;
+}
+.side-note b{color:var(--ink-2)}
+
+/* ---------- 板块通用 ---------- */
+section.block{margin-bottom:clamp(30px,4.6vw,52px);scroll-margin-top:var(--sticky-h)}
+.block-head{margin-bottom:16px}
+.block-head .kicker{
+  font-size:12.5px;letter-spacing:.14em;color:var(--accent);font-weight:700;
+  text-transform:uppercase;margin-bottom:4px;
+}
+.block-head h2{font-size:clamp(20px,2.6vw,26px);color:var(--brand-deep)}
+.block-head p{color:var(--ink-2);font-size:14.5px;margin:6px 0 0;max-width:56em}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow-s);padding:clamp(14px,2vw,20px);
+}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.tagline{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.tag{
+  font-size:13px;background:var(--paper-2);color:var(--ink-2);
+  padding:4px 11px;border-radius:99px;border:1px solid var(--line);
+  transition:background .15s,color .15s;
+}
+.tag:hover{background:var(--brand-soft);color:var(--brand-deep);text-decoration:none}
+.mini{font-size:13px;color:var(--ink-3)}
+.mono{font-variant-numeric:tabular-nums}
+
+/* 概览 */
+.ov-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.ov-item{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:12px 14px;box-shadow:var(--shadow-s);
+}
+.ov-item b{display:block;font-size:19px;color:var(--brand-deep);line-height:1.25}
+.ov-item span{font-size:12.5px;color:var(--ink-3);display:block;margin-top:3px;line-height:1.5}
+
+/* 精选卡片 */
+.pick-card{display:flex;flex-direction:column;gap:9px}
+.pick-card figure{margin:0;border-radius:var(--radius-s);overflow:hidden;background:var(--paper-2)}
+.pick-card img{width:100%;height:132px;object-fit:cover}
+.pick-card h3{font-size:16.5px;color:var(--ink)}
+.pick-card p{font-size:13.8px;color:var(--ink-2);margin:0}
+.meta-row{display:flex;gap:10px;font-size:12.5px;color:var(--ink-3);flex-wrap:wrap}
+
+/* 更新列表 */
+.up-list{list-style:none;padding:0;margin:0;border-left:2px solid var(--line)}
+.up-list li{
+  position:relative;padding:0 0 16px 18px;margin:0;
+}
+.up-list li:last-child{padding-bottom:0}
+.up-list li::before{
+  content:"";position:absolute;left:-6px;top:8px;width:10px;height:10px;border-radius:50%;
+  background:var(--brand);box-shadow:0 0 0 3px var(--paper);
+}
+.up-list time{font-size:12.5px;color:var(--accent);font-weight:700;letter-spacing:.02em}
+.up-list h3{font-size:15.5px;margin:2px 0 3px}
+.up-list p{font-size:13.8px;color:var(--ink-2);margin:0}
+
+/* 分类索引 */
+.cat-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.cat-item{
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-s);
+  padding:10px 13px;transition:border-color .15s,background .15s;
+}
+.cat-item:hover{border-color:var(--brand);background:var(--brand-soft);text-decoration:none}
+.cat-item b{font-size:14.5px;color:var(--ink);font-weight:600}
+.cat-item span{font-size:12.5px;color:var(--ink-3);flex:none}
+
+/* 深度解析 */
+.deep{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-s);padding:clamp(16px,2.6vw,28px)}
+.deep > p{font-size:15.5px;color:var(--ink-2)}
+.deep h3{
+  font-size:17.5px;color:var(--brand-deep);margin:24px 0 8px;
+  padding-left:11px;border-left:4px solid var(--accent);
+}
+.deep h3:first-of-type{margin-top:6px}
+.verdict{
+  background:var(--accent-soft);border:1px solid #efd8b0;border-radius:var(--radius-s);
+  padding:12px 15px;font-size:14.5px;color:#5d3a10;margin:12px 0;
+}
+.verdict b{color:#3f2607}
+.check-table{width:100%;border-collapse:collapse;font-size:13.8px;margin:12px 0;display:block;overflow-x:auto}
+.check-table th,.check-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.check-table th{background:var(--paper-2);color:var(--ink-2);font-weight:600;white-space:nowrap}
+.deep blockquote{
+  margin:16px 0;padding:12px 16px;background:var(--brand-soft);
+  border-left:4px solid var(--brand);border-radius:0 var(--radius-s) var(--radius-s) 0;
+  font-size:14.5px;color:var(--brand-deep);
+}
+.deep blockquote cite{display:block;font-size:12.5px;color:var(--ink-3);font-style:normal;margin-top:6px}
+
+/* 体验指南步骤 */
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.steps li{
+  counter-increment:s;position:relative;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);padding:13px 16px 13px 54px;box-shadow:var(--shadow-s);
+}
+.steps li::before{
+  content:counter(s,decimal-leading-zero);position:absolute;left:14px;top:12px;
+  font-size:13px;font-weight:700;color:#fff;background:var(--brand);
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+}
+.steps b{display:block;font-size:15px;margin-bottom:2px}
+.steps p{font-size:13.8px;color:var(--ink-2);margin:0}
+
+/* FAQ */
+details.faq{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-s);
+  margin-bottom:9px;padding:0 14px;box-shadow:var(--shadow-s);
+}
+details.faq summary{
+  cursor:pointer;font-size:15px;font-weight:600;color:var(--ink);
+  padding:12px 0;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{
+  content:"+";font-size:19px;color:var(--brand);font-weight:400;flex:none;transition:transform .15s;
+}
+details.faq[open] summary::after{content:"−"}
+details.faq .ans{font-size:14px;color:var(--ink-2);padding:0 0 13px;border-top:1px dashed var(--line);margin-top:-2px;padding-top:10px}
+
+/* 评论 */
+.cmt-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.cmt{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:13px 15px;box-shadow:var(--shadow-s)}
+.cmt .who{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--ink-3);margin-bottom:6px}
+.avatar{
+  width:26px;height:26px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-size:12px;font-weight:700;color:#fff;background:var(--brand);
+}
+.avatar.a2{background:var(--accent)}
+.avatar.a3{background:#3f6b5b}
+.avatar.a4{background:#6b5377}
+.cmt p{font-size:14px;color:var(--ink-2);margin:0}
+.cmt .ref{display:inline-block;font-size:12.5px;color:var(--brand);background:var(--brand-soft);padding:1px 8px;border-radius:99px;margin-top:7px}
+.cmt .stars{color:var(--accent);font-size:12.5px;letter-spacing:1px}
+
+/* 对照面板 */
+.panel-compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card);box-shadow:var(--shadow-s)}
+.panel-compare > div{padding:14px 16px}
+.panel-compare > div:first-child{border-right:1px solid var(--line);background:#fbf7f1}
+.panel-compare h3{font-size:14px;letter-spacing:.04em;margin-bottom:8px;color:var(--warn)}
+.panel-compare > div:last-child h3{color:var(--ok)}
+.panel-compare ul{margin:0;padding-left:1.1em;font-size:13.8px;color:var(--ink-2)}
+.panel-compare li{margin:.2em 0}
+
+/* 榜单 */
+.rank{list-style:none;padding:0;margin:0;counter-reset:r}
+.rank li{
+  counter-increment:r;display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:center;
+  padding:11px 14px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-s);
+  margin-bottom:8px;box-shadow:var(--shadow-s);
+}
+.rank li::before{
+  content:counter(r);font-weight:700;font-size:15px;color:#fff;background:var(--ink-3);
+  width:26px;height:26px;border-radius:7px;display:grid;place-items:center;
+}
+.rank li:nth-child(1)::before{background:var(--brand)}
+.rank li:nth-child(2)::before{background:#7a4a86}
+.rank li:nth-child(3)::before{background:var(--accent)}
+.rank b{font-size:14.8px;font-weight:600}
+.rank .note{font-size:12.5px;color:var(--ink-3);display:block;margin-top:1px}
+.rank .num{font-size:13px;color:var(--accent);font-weight:700;flex:none}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.news-item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:13px 15px;box-shadow:var(--shadow-s)}
+.news-item time{font-size:12px;color:var(--accent);font-weight:700}
+.news-item h3{font-size:15px;margin:3px 0 4px}
+.news-item p{font-size:13.5px;color:var(--ink-2);margin:0}
+
+/* 推荐标签 */
+.reco{display:flex;flex-wrap:wrap;gap:9px}
+.reco a{
+  font-size:14px;background:var(--card);border:1px solid var(--line);border-radius:99px;
+  padding:6px 14px;color:var(--ink-2);box-shadow:var(--shadow-s);
+  transition:transform .15s,background .15s,color .15s;
+}
+.reco a:hover{transform:translateY(-2px);background:var(--brand-soft);color:var(--brand-deep);text-decoration:none}
+
+/* 时间线 */
+.timeline{position:relative;margin:0;padding:0 0 0 20px;list-style:none;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding-bottom:16px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-27px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--card);border:2px solid var(--brand)}
+.timeline time{font-size:12.5px;font-weight:700;color:var(--brand)}
+.timeline p{font-size:13.8px;color:var(--ink-2);margin:2px 0 0}
+
+/* 页尾 */
+.site-foot{background:var(--brand-deep);color:#e9dfee;margin-top:clamp(20px,4vw,40px)}
+.site-foot .wrap{padding:clamp(26px,4vw,42px) 0 22px}
+.foot-top{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(0,1fr));gap:clamp(16px,3vw,34px)}
+.foot-brand{display:flex;gap:10px;align-items:flex-start;margin-bottom:10px}
+.foot-brand svg{width:34px;height:34px;flex:none}
+.foot-brand strong{font-size:17px;color:#fff;display:block;line-height:1.3}
+.foot-brand span{font-size:11.5px;color:#b9a6c3;letter-spacing:.08em}
+.foot-pos{font-size:13.5px;color:#cbbcd4;line-height:1.75;max-width:26em}
+.foot-col h3{font-size:13px;letter-spacing:.1em;color:#f0d9a8;margin-bottom:9px;font-weight:700}
+.foot-col a{display:block;font-size:13.5px;color:#d5c7dd;padding:3px 0}
+.foot-col a:hover{color:#fff;text-decoration:none}
+.foot-bottom{
+  border-top:1px solid rgba(255,255,255,.16);margin-top:22px;padding-top:14px;
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  font-size:12.5px;color:#b9a6c3;
+}
+.foot-bottom p{margin:0}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:16px;bottom:16px;z-index:50;
+  width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+  background:#fff;color:var(--brand-deep);box-shadow:var(--shadow);
+  display:grid;place-items:center;cursor:pointer;opacity:0;visibility:hidden;
+  transition:opacity .2s,transform .15s,visibility .2s;font-size:12px;font-weight:700;
+}
+.to-top.show{opacity:1;visibility:visible}
+.to-top:hover{transform:translateY(-2px)}
+.to-top svg{width:16px;height:16px;display:block}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1000px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-art{order:-1;justify-content:flex-start}
+  .hero-art svg{width:min(64%,260px)}
+  .layout{grid-template-columns:1fr}
+  .side{position:static;order:2;margin-top:8px}
+  .side nav{flex-direction:row;flex-wrap:wrap;gap:6px}
+  .side nav a{border-left:0;border:1px solid var(--line);background:#fff;padding:5px 11px}
+  .side nav a.active{border-color:var(--brand)}
+  .news-grid,.grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ov-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .nav-main{display:none;order:5;width:100%;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);padding:8px;margin-top:4px}
+  .nav-main.open{display:flex}
+  .nav-main a{padding:9px 11px}
+  .head-tools{order:6;width:100%;justify-content:space-between}
+  .search-wrap{flex:1}
+  .search-wrap input{width:100%}
+  .search-wrap input:focus{width:100%}
+  .btn-menu{display:inline-flex;align-items:center;gap:6px;order:7}
+}
+@media (max-width:640px){
+  :root{--sticky-h:110px}
+  .grid-3,.grid-2,.cat-grid,.cmt-grid,.news-grid,.panel-compare,.foot-top{grid-template-columns:1fr}
+  .panel-compare > div:first-child{border-right:0;border-bottom:1px solid var(--line)}
+  .head-tools{flex-direction:column;align-items:stretch;gap:8px}
+  .brand-text strong{font-size:16px}
+  .hero-stats{gap:14px}
+  .hero-stats b{font-size:19px}
+  .announce{font-size:12.5px}
+  .announce .wrap{padding:6px 0;gap:6px}
+  .ov-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat-item{padding:10px 11px}
+  .to-top{right:12px;bottom:12px;width:40px;height:40px}
+  .deep{padding:14px}
+  section.block{margin-bottom:28px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 公告条 -->
+<div class="announce" role="region" aria-label="站内更新公告">
+  <div class="wrap">
+    <span class="tag">更新</span>
+    <span><b>11月7日</b> 补入《夜航台 No.41》全程时间轴，标注 03:12 与 07:48 两处取舍口径差异</span>
+    <span class="mini" style="color:#c9b7d2">· 11月6日 追评 214 条</span>
+  </div>
+</div>
+
+<!-- 页头 -->
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="brand" href="/#top" aria-label="丹祖宗女王vk 首页">
+      <svg viewBox="0 0 64 64" role="img" aria-label="丹祖宗女王vk 图形标志">
+        <rect width="64" height="64" rx="14" fill="#3c1b44"/>
+        <path d="M32 9l4.6 13.4L50 27l-13.4 4.6L32 45l-4.6-13.4L14 27l13.4-4.6z" fill="#e8b75a"/>
+        <circle cx="47" cy="47" r="6.5" fill="none" stroke="#f4ecf6" stroke-width="2"/>
+        <path d="M43.6 47l2.6 2.6 4.4-5" fill="none" stroke="#f4ecf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-text"><strong>丹祖宗女王vk</strong><span>公开内容追踪档案</span></span>
+    </a>
+
+    <nav class="nav-main" id="navMain" aria-label="主题导航">
+      <a href="/#overview">领域概览</a>
+      <a href="/#picks">精选推荐</a>
+      <a href="/#updates">最新更新</a>
+      <a href="/#channels">分类入口</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#reviews">观众评论</a>
+      <a href="/#news">相关资讯</a>
+      <a href="/#reco">相关推荐</a>
+    </nav>
+
+    <div class="head-tools">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+        <input type="search" id="siteSearch" placeholder="查找条目、期数或人物" aria-label="站内本地查找" autocomplete="off">
+        <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+      </div>
+      <button class="btn-menu" id="btnMenu" type="button" aria-expanded="false" aria-controls="navMain">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        菜单
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <div class="hero-meta">
+          <span class="chip">档案编号 VK-2026</span>
+          <span class="chip alt">近30天更新 12 条</span>
+          <span class="chip">事实 / 回应 / 推测分层</span>
+        </div>
+        <h1>丹祖宗女王vk</h1>
+        <p class="hero-lead">一位以长时段夜谈和角色化口播为主的创作者。这里把公开视频、社区回应与二次剪辑分开记：哪期讲了什么，哪些说法出自本人，哪些是观众转述，落在同一张可核对的档案里。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#deep">读本期深度解析</a>
+          <a class="btn btn-ghost" href="/#updates">看近30天更新</a>
+        </div>
+        <div class="hero-stats">
+          <div><b class="mono">41</b><span>已建档公开期数</span></div>
+          <div><b class="mono">12</b><span>近30天新增条目</span></div>
+          <div><b class="mono">9</b><span>分类频道</span></div>
+          <div><b class="mono">214</b><span>本轮收录评论</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 360 340" role="img" aria-label="原创构图：麦克风、声波与档案格">
+          <defs>
+            <linearGradient id="hg1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#5a2f63"/>
+              <stop offset="1" stop-color="#8a4a86"/>
+            </linearGradient>
+            <linearGradient id="hg2" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#f0d9a8"/>
+              <stop offset="1" stop-color="#c0822c"/>
+            </linearGradient>
+          </defs>
+          <rect x="18" y="26" width="324" height="288" rx="24" fill="#fff" opacity=".82"/>
+          <rect x="18" y="26" width="324" height="288" rx="24" fill="none" stroke="#e2d8d2"/>
+          <g stroke="#e2d8d2" stroke-width="1">
+            <path d="M34 86h292M34 146h292M34 206h292M34 266h292"/>
+            <path d="M104 42v256M194 42v256M264 42v256"/>
+          </g>
+          <rect x="44" y="52" width="44" height="18" rx="9" fill="#f0e6f2"/>
+          <rect x="122" y="112" width="54" height="18" rx="9" fill="#fbf1de"/>
+          <rect x="212" y="232" width="46" height="18" rx="9" fill="#f0e6f2"/>
+          <g transform="translate(180 168)">
+            <rect x="-20" y="-62" width="40" height="86" rx="20" fill="url(#hg1)"/>
+            <rect x="-13" y="-54" width="26" height="52" rx="13" fill="#f4ecf6" opacity=".5"/>
+            <path d="M-34 6a34 34 0 0068 0" fill="none" stroke="#3c1b44" stroke-width="6" stroke-linecap="round"/>
+            <path d="M0 40v26" stroke="#3c1b44" stroke-width="6" stroke-linecap="round"/>
+            <path d="M-22 82h44" stroke="#3c1b44" stroke-width="6" stroke-linecap="round"/>
+          </g>
+          <g stroke="url(#hg2)" stroke-width="3" stroke-linecap="round" fill="none">
+            <path d="M52 150c6-12 12-12 18 0s12 12 18 0"/>
+            <path d="M272 148c6-12 12-12 18 0s12 12 18 0"/>
+            <path d="M56 226c6-12 12-12 18 0"/>
+            <path d="M286 208c6-12 12-12 18 0s12 12 18 0"/>
+          </g>
+          <circle cx="300" cy="62" r="17" fill="none" stroke="#c0822c" stroke-width="3"/>
+          <path d="M293 62l5 5 9-11" fill="none" stroke="#c0822c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+
+    <!-- 主内容 -->
+    <div class="main-col">
+
+      <!-- 1 领域概览 -->
+      <section class="block" id="overview">
+        <div class="block-head">
+          <div class="kicker">Overview</div>
+          <h2>领域概览：这类夜谈视频在内容生态里处什么位置</h2>
+          <p>先划清范围。长时段口播、角色化叙事、弹幕回应，是三条不同的轨道；混在一起谈容易把剪辑效果当成原片。</p>
+        </div>
+        <div class="ov-grid">
+          <div class="ov-item"><b class="mono">60–110</b><span>单期原始时长（分钟）</span></div>
+          <div class="ov-item"><b class="mono">4:1</b><span>原片与二创剪辑时长比均值</span></div>
+          <div class="ov-item"><b class="mono">周三 / 周六</b><span>2026年10月以来稳定开播日</span></div>
+          <div class="ov-item"><b class="mono">03:12</b><span>《夜航台 No.41》第一次口径切换点</span></div>
+        </div>
+        <div class="grid-3" style="margin-top:14px">
+          <article class="card">
+            <h3 style="font-size:16px">原始口播</h3>
+            <p class="mini" style="margin:6px 0 0">无剪辑的连麦与独白，常有停顿、自我更正。看这类内容能判断本人立场，但节奏慢，单期信息密度低于剪辑版。</p>
+          </article>
+          <article class="card">
+            <h3 style="font-size:16px">角色化片段</h3>
+            <p class="mini" style="margin:6px 0 0">固定开场、固定称呼、固定语速，观众记住的往往是这部分。片段脱离原片后，语境损耗最大，需要回到时间轴核对。</p>
+          </article>
+          <article class="card">
+            <h3 style="font-size:16px">社区二次剪辑</h3>
+            <p class="mini" style="margin:6px 0 0">切片账号把 90 分钟压到 3 分钟，常用标题强化冲突。10月至今至少 7 个切片版本对同一段话给出不同断句。</p>
+          </article>
+        </div>
+        <div class="tagline">
+          <a class="tag" href="/#channels">夜谈长录音</a>
+          <a class="tag" href="/#channels">角色口播片段</a>
+          <a class="tag" href="/#channels">连麦回应实录</a>
+          <a class="tag" href="/#channels">二创断句对比</a>
+          <a class="tag" href="/#channels">开播日历</a>
+        </div>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="block" id="picks">
+        <div class="block-head">
+          <div class="kicker">Picks</div>
+          <h2>精选内容推荐：四期值得先看的原始版本</h2>
+          <p>按“能独立看懂”排序，不看播放量。每条给出可核对的时间点，方便直接定位。</p>
+        </div>
+        <div class="grid-2">
+          <article class="card pick-card">
+            <figure>
+              <img src="https://picsum.photos/seed/vk-night41/640/320" width="640" height="320" loading="lazy" alt="夜航台第41期录音台画面，麦克风与时间轴标记" style="object-fit:cover">
+            </figure>
+            <h3>《夜航台 No.41》口径切换全程</h3>
+            <p>03:12 起从“作品讨论”切到“账号归属”，07:48 又切回。两次切换之间没有解释，是本期争议核心。</p>
+            <div class="meta-row"><span>11月7日整理</span><span>时长 94 分钟</span><span>含 6 处自更正</span></div>
+          </article>
+          <article class="card pick-card">
+            <figure>
+              <img src="https://picsum.photos/seed/vk-dialogue29/640/320" width="640" height="320" loading="lazy" alt="连麦回应实录第29期画面，双人对话界面示意" style="object-fit:cover">
+            </figure>
+            <h3>连麦回应实录 No.29：三问三答</h3>
+            <p>观众提的三个问题被逐条回应，其中第二条答到一半改口。改口前后说法并排放在深度解析里。</p>
+            <div class="meta-row"><span>11月5日</span><span>时长 72 分钟</span><span>改口点 41:20</span></div>
+          </article>
+          <article class="card pick-card">
+            <figure>
+              <img src="https://picsum.photos/seed/vk-rolecut18/640/320" width="640" height="320" loading="lazy" alt="角色口播片段第18集画面，固定开场字幕样式" style="object-fit:cover">
+            </figure>
+            <h3>角色口播片段 No.18：开场白三次版本</h3>
+            <p>同一段开场白在 9 月、10 月、11 月各录一版，措辞差异 5 处，是观察风格变化的低成本入口。</p>
+            <div class="meta-row"><span>11月3日</span><span>时长 6 分钟</span><span>3 个版本对照</span></div>
+          </article>
+          <article class="card pick-card">
+            <figure>
+              <img src="https://picsum.photos/seed/vk-archive07/640/320" width="640" height="320" loading="lazy" alt="档案整理画面，编号卡片与便签墙" style="object-fit:cover">
+            </figure>
+            <h3>档案整理 No.07：被剪掉的开场 14 分钟</h3>
+            <p>原片开场有一段关于排期的说明，切片版全部剪去。听众误以为“临时开播”，实际 10 月 18 日已预告。</p>
+            <div class="meta-row"><span>11月2日</span><span>时长 14 分钟</span><span>附原始预告截图描述</span></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="block" id="updates">
+        <div class="block-head">
+          <div class="kicker">Updates</div>
+          <h2>最新更新：近30天可核对的条目</h2>
+          <p>只记有具体时间点或可对照原文的变化，传闻类不进这一栏。</p>
+        </div>
+        <ol class="up-list">
+          <li>
+            <time datetime="2026-11-07">11月7日</time>
+            <h3>《夜航台 No.41》上线完整录音</h3>
+            <p>全长 94 分 12 秒，比 11月6日流出的剪辑版多 51 分钟。03:12 与 07:48 两处口径切换均已标注。</p>
+          </li>
+          <li>
+            <time datetime="2026-11-06">11月6日</time>
+            <h3>评论区追评 214 条，集中讨论账号归属</h3>
+            <p>其中 63 条引用原片时间点，151 条为情绪表达。引用时间点的评论已单独归档，作为下轮核对的材料。</p>
+          </li>
+          <li>
+            <time datetime="2026-11-05">11月5日</time>
+            <h3>连麦回应实录 No.29 改口点被标出</h3>
+            <p>41:20 处先说“没有第二账号”，停顿 4 秒后改为“没有在用的第二账号”。两版转录文本已并列保存。</p>
+          </li>
+          <li>
+            <time datetime="2026-11-03">11月3日</time>
+            <h3>角色口播片段 No.18 三个版本齐了</h3>
+            <p>9月版、10月版、11月版开场白并排，措辞差异 5 处，主要在称呼和收尾句。</p>
+          </li>
+          <li>
+            <time datetime="2026-11-01">11月1日</time>
+            <h3>10月开播日历补全，实播 8 场</h3>
+            <p>预告 9 场，10月18日那场因设备问题顺延至19日，顺延通知在原预告帖下补充。</p>
+          </li>
+          <li>
+            <time datetime="2026-10-29">10月29日</time>
+            <h3>切片账号“夜航切片组”删除 3 条视频</h3>
+            <p>删除原因未说明。3 条均为断句争议版本，此前已被其他用户转发，转发件仍在。</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="block" id="channels">
+        <div class="block-head">
+          <div class="kicker">Channels</div>
+          <h2>分类入口：九个具体频道</h2>
+          <p>频道按内容形态划分，不按热度。每个频道对应一类可检索的条目。</p>
+        </div>
+        <div class="cat-grid">
+          <a class="cat-item" href="/#picks"><b>夜航台长录音</b><span>41 期</span></a>
+          <a class="cat-item" href="/#picks"><b>角色口播片段</b><span>18 集</span></a>
+          <a class="cat-item" href="/#picks"><b>连麦回应实录</b><span>29 期</span></a>
+          <a class="cat-item" href="/#news"><b>二创断句对比</b><span>7 组</span></a>
+          <a class="cat-item" href="/#guide"><b>开播日历与预告</b><span>8 场/月</span></a>
+          <a class="cat-item" href="/#deep"><b>口径变化时间轴</b><span>12 个节点</span></a>
+          <a class="cat-item" href="/#reviews"><b>观众评论分层</b><span>214 条</span></a>
+          <a class="cat-item" href="/#rank"><b>单期回看榜</b><span>10 条</span></a>
+          <a class="cat-item" href="/#news"><b>账号归属讨论</b><span>3 个阶段</span></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="block" id="deep">
+        <div class="block-head">
+          <div class="kicker">Deep Read</div>
+          <h2>深度解析：口径切换发生在哪，为什么值得追</h2>
+          <p>全页唯一的主体阅读区。以下判断可以被反驳，给出的时间点与措辞都能回原片核对。</p>
+        </div>
+        <article class="deep">
+          <p>把 10 月到 11 月的六期原始录音按时间排开，会发现一个不那么显眼的变化：对“账号是否只有一个”的回答，措辞在收窄，但收窄的方式不是明确否认，而是不断加限定词。这条线比单期争议更值得看。</p>
+
+          <h3>一、03:12 与 07:48：两次切换，两种说法</h3>
+          <p>《夜航台 No.41》前半段在谈作品结构，03:12 处有听众连麦提问账号归属。原话是“就这一个，没有别的”。到 07:48，同一话题被另一位听众再问一次，回答变成“在用的就这一个”。中间 4 分 36 秒里没有新信息进入，措辞却从绝对判断退到状态描述。</p>
+          <div class="verdict"><b>可核对判断：</b>两次回答的信息增量接近零，限定词却增加了。若按“是否承认存在备用账号”计，03:12 是否认，07:48 是回避。这一差异不靠语气判断，靠转录文本对照即可复现。</div>
+
+          <h3>二、连麦回应 No.29 的 41:20：改口有停顿</h3>
+          <p>11月5日的连麦回应里，第二个问题问到同一件事。41:20 处先说“没有第二账号”，停顿约 4 秒，补上“没有在用的第二账号”。停顿长度在原始音频里可测，剪辑版把它剪掉了，听起来像一次连贯表述。</p>
+          <table class="check-table">
+            <thead><tr><th>节点</th><th>原始措辞</th><th>限定词</th><th>剪辑版处理</th></tr></thead>
+            <tbody>
+              <tr><td>No.41 / 03:12</td><td>就这一个，没有别的</td><td>无</td><td>保留</td></tr>
+              <tr><td>No.41 / 07:48</td><td>在用的就这一个</td><td>“在用的”</td><td>保留</td></tr>
+              <tr><td>No.29 / 41:20</td><td>没有在用的第二账号</td><td>“在用的”</td><td>剪去 4 秒停顿</td></tr>
+            </tbody>
+          </table>
+
+          <h3>三、不能直接当结论的部分</h3>
+          <p>“存在备用账号”目前属于推测，没有公开的账号列表或平台侧信息支持。能确认的只有措辞变化本身。把推测当事实传播的切片至少 3 条，10月29日删除的那批视频里有 2 条属于此类。</p>
+          <blockquote>
+            “10月29日删的三条里，有一条把 07:48 那句直接写成‘承认有小号’，原话里没有这两个字。”
+            <cite>—— 观众评论，11月6日，引用 No.41 时间点</cite>
+          </blockquote>
+
+          <h3>四、为什么这条线比单期热度更值得追</h3>
+          <p>单期热度一周就散，措辞收窄是可累积的观察项。按目前节奏，每两到三期会出现一次同类限定，10月共 4 次，11月前 7 天已有 2 次。频次本身不能证明什么，但足以说明这不是一次口误。</p>
+          <p>反过来说，如果后续三期里限定词消失、回到 03:12 那种绝对表述，上面这条判断就该修正。核对方法很简单：只看原始录音，不看切片标题。</p>
+        </article>
+      </section>
+
+      <!-- 6 体验指南 -->
+      <section class="block" id="guide">
+        <div class="block-head">
+          <div class="kicker">Guide</div>
+          <h2>体验指南：第一次看，按这个顺序</h2>
+          <p>从短到长，从片段到原片。每一步都给出具体时长，避免一上来被 90 分钟劝退。</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <b>先看 6 分钟的角色口播片段 No.18</b>
+            <p>熟悉固定开场和称呼方式。三个版本并排看，能感知 9 月到 11 月的用语变化。</p>
+          </li>
+          <li>
+            <b>再看 14 分钟的档案整理 No.07</b>
+            <p>了解排期和预告机制。看完会明白“临时开播”的说法从哪来，以及为什么站不住。</p>
+          </li>
+          <li>
+            <b>然后进连麦回应 No.29 的 35:00–50:00 段</b>
+            <p>只取争议段，约 15 分钟。注意 41:20 的停顿，这是后面所有讨论的起点。</p>
+          </li>
+          <li>
+            <b>最后补《夜航台 No.41》03:00–08:30</b>
+            <p>5 分半，两次口径切换都在里面。看完再回评论区，能分辨哪些评论引用了原文、哪些只是转述。</p>
+          </li>
+          <li>
+            <b>有余力再听全片 94 分钟</b>
+            <p>全片的价值在中段的自我更正，共 6 处。只听切片不会知道这些更正存在。</p>
+          </li>
+        </ol>
+        <div class="panel-compare" style="margin-top:14px">
+          <div>
+            <h3>只看切片会得到的印象</h3>
+            <ul>
+              <li>回答干脆，一次说清</li>
+              <li>开播是临时的</li>
+              <li>账号问题已经否认</li>
+              <li>立场从头到尾一致</li>
+            </ul>
+          </div>
+          <div>
+            <h3>回到原片后看到的情况</h3>
+            <ul>
+              <li>41:20 有 4 秒停顿和补句</li>
+              <li>10月18日已发预告，19日顺延</li>
+              <li>03:12 否认，07:48 改为状态描述</li>
+              <li>6 处自我更正，其中 2 处涉及账号</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="block" id="faq">
+        <div class="block-head">
+          <div class="kicker">FAQ</div>
+          <h2>常见问答：关于期数、账号与剪辑的八个问题</h2>
+          <p>答案尽量给具体节点，不给态度。</p>
+        </div>
+
+        <details class="faq" open>
+          <summary>《夜航台 No.41》完整版多长，和剪辑版差在哪？</summary>
+          <div class="ans">完整录音 94 分 12 秒，11月6日流出的剪辑版 43 分钟。差异集中在开场 14 分钟的排期说明、中段 6 处自我更正，以及 03:12 与 07:48 两次口径切换之间的 4 分 36 秒过渡。剪辑版保留了两次回答，剪掉了过渡。</div>
+        </details>
+        <details class="faq">
+          <summary>连麦回应 No.29 的 41:20 到底说了什么？</summary>
+          <div class="ans">先说“没有第二账号”，停顿约 4 秒，补为“没有在用的第二账号”。原始音频停顿可测，剪辑版剪掉了停顿。两版转录文本已在更新栏并列保存，可对照。</div>
+        </details>
+        <details class="faq">
+          <summary>角色口播片段 No.18 的三个版本差在哪？</summary>
+          <div class="ans">9月版、10月版、11月版开场白共 5 处措辞差异，主要在称呼和收尾句。语速差异不大，固定开场结构没变。三版合计 18 分钟，并排看比重听长录音省时间。</div>
+        </details>
+        <details class="faq">
+          <summary>10月18日那场为什么顺延到19日？</summary>
+          <div class="ans">设备问题。顺延通知补在原预告帖下，没有单独发帖，所以很多人以为当天没开播。10月实播 8 场，预告 9 场，差的就是这一场。</div>
+        </details>
+        <details class="faq">
+          <summary>“夜航切片组”删掉的 3 条视频是什么内容？</summary>
+          <div class="ans">均为断句争议版本，其中 2 条把 07:48 那句写成“承认有小号”，原话没有这几个字。删除原因未说明，转发件仍在，可自行比对。</div>
+        </details>
+        <details class="faq">
+          <summary>账号归属问题目前能确认到什么程度？</summary>
+          <div class="ans">能确认的只有措辞变化：10月以来限定词出现 6 次，频次在上升。“存在备用账号”仍是推测，没有账号列表或平台侧信息支撑。把推测当事实的切片至少 3 条。</div>
+        </details>
+        <details class="faq">
+          <summary>为什么周三和周六开播？其他时间有吗？</summary>
+          <div class="ans">2026年10月以来稳定在周三、周六，10月共 8 场。11月前 7 天开了 2 场，都在周六。其他时间偶有短片段发布，不算开播。</div>
+        </details>
+        <details class="faq">
+          <summary>只看片段能跟上讨论吗？</summary>
+          <div class="ans">能跟上节奏，跟不上分歧。评论区里 63 条引用原片时间点的讨论，片段观众基本接不上。至少补看 No.41 的 03:00–08:30，约 5 分半。</div>
+        </details>
+      </section>
+
+      <!-- 8 观众评论 -->
+      <section class="block" id="reviews">
+        <div class="block-head">
+          <div class="kicker">Reviews</div>
+          <h2>观众评论：214 条里的四种态度</h2>
+          <p>按指向具体条目的程度筛出六条，褒贬都有，含两条中性吐槽。</p>
+        </div>
+        <div class="cmt-grid">
+          <article class="cmt">
+            <div class="who"><span class="avatar">林</span><span>林间电台 · 11月6日</span><span class="stars">★★★★☆</span></div>
+            <p>No.41 那段过渡其实挺有意思，4 分多钟里她两次想绕开话题又绕回来。切片把这段剪了，等于把最有信息量的部分扔了。</p>
+            <span class="ref">指向：夜航台 No.41</span>
+          </article>
+          <article class="cmt">
+            <div class="who"><span class="avatar a2">阿</span><span>阿柴不熬夜 · 11月5日</span><span class="stars">★★★☆☆</span></div>
+            <p>连麦回应 No.29 第二个问题答得太绕，41:20 停了半天才补一句。听感不好，但至少没硬编。</p>
+            <span class="ref">指向：连麦回应 No.29</span>
+          </article>
+          <article class="cmt">
+            <div class="who"><span class="avatar a3">夜</span><span>夜航常客 · 11月4日</span><span class="stars">★★★★★</span></div>
+            <p>口播片段 No.18 三版连着听，能听出收尾句越改越短。这种细节比任何解读都实在。</p>
+            <span class="ref">指向：角色口播片段 No.18</span>
+          </article>
+          <article class="cmt">
+            <div class="who"><span class="avatar a4">剪</span><span>剪刀手老周 · 11月3日</span><span class="stars">★★☆☆☆</span></div>
+            <p>档案整理 No.07 说“临时开播”站不住，可预告帖当时确实没几个人看到。信息在，不代表传到了，这点讲得不够。</p>
+            <span class="ref">指向：档案整理 No.07</span>
+          </article>
+          <article class="cmt">
+            <div class="who"><span class="avatar">半</span><span>半页笔记 · 11月2日</span><span class="stars">★★★☆☆</span></div>
+            <p>切片删除那三条我存过，确实写了“承认有小号”，原话里没有。这条不是立场问题，是转录错了。</p>
+            <span class="ref">指向：10月29日删除视频</span>
+          </article>
+          <article class="cmt">
+            <div class="who"><span class="avatar a2">路</span><span>路过的听众 · 10月31日</span><span class="stars">★★★☆☆</span></div>
+            <p>九十多分钟真的听不完。片段版有它的用处，只是别把片段当全集就行。</p>
+            <span class="ref">指向：全期时长</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="block" id="news">
+        <div class="block-head">
+          <div class="kicker">News</div>
+          <h2>相关资讯：三件各自独立发生的事</h2>
+          <p>只记发生过的动作，不重复解析里的判断。</p>
+        </div>
+        <div class="news-grid">
+          <article class="news-item">
+            <time datetime="2026-11-06">11月6日</time>
+            <h3>评论区单日新增 214 条</h3>
+            <p>63 条引用原片时间点，151 条为情绪表达。引用类已单独归档。</p>
+          </article>
+          <article class="news-item">
+            <time datetime="2026-10-29">10月29日</time>
+            <h3>切片账号删除 3 条视频</h3>
+            <p>均为断句争议版本，删除原因未说明，转发件仍在流通。</p>
+          </article>
+          <article class="news-item">
+            <time datetime="2026-10-19">10月19日</time>
+            <h3>顺延场次补播完成</h3>
+            <p>原定10月18日的场次因设备问题顺延，补播时长 81 分钟，无预告。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10 单期回看榜 -->
+      <section class="block" id="rank">
+        <div class="block-head">
+          <div class="kicker">Rank</div>
+          <h2>单期回看榜：按“回看后信息增量”排</h2>
+          <p>不按播放量，按回看一次能多拿到多少可核对信息排序。数据截至11月7日。</p>
+        </div>
+        <ol class="rank">
+          <li><div><b>夜航台 No.41</b><span class="note">两处口径切换 + 6 处自我更正</span></div><span class="num">+9 项</span></li>
+          <li><div><b>连麦回应 No.29</b><span class="note">41:20 改口，剪辑版剪去停顿</span></div><span class="num">+7 项</span></li>
+          <li><div><b>档案整理 No.07</b><span class="note">开场 14 分钟排期说明</span></div><span class="num">+6 项</span></li>
+          <li><div><b>夜航台 No.38</b><span class="note">10月以来首次出现“在用的”限定</span></div><span class="num">+4 项</span></li>
+          <li><div><b>角色口播片段 No.18</b><span class="note">三版开场白，5 处措辞差异</span></div><span class="num">+3 项</span></li>
+        </ol>
+      </section>
+
+      <!-- 11 相关推荐 -->
+      <section class="block" id="reco">
+        <div class="block-head">
+          <div class="kicker">More</div>
+          <h2>相关推荐：按你刚才看的条目顺着走</h2>
+          <p>标签直接对应可检索的条目名或观察项。</p>
+        </div>
+        <div class="reco">
+          <a href="/#deep">夜航台 No.41 口径切换时间轴</a>
+          <a href="/#picks">连麦回应 No.29 改口点转录</a>
+          <a href="/#picks">角色口播片段 No.18 三版对照</a>
+          <a href="/#guide">开播日历与顺延记录</a>
+          <a href="/#news">二创断句对比 7 组</a>
+          <a href="/#updates">切片账号删除事件</a>
+          <a href="/#deep">限定词出现频次统计</a>
+          <a href="/#faq">账号归属讨论的三种说法</a>
+          <a href="/#reviews">引用原文的 63 条评论</a>
+        </div>
+      </section>
+
+      <!-- 12 时间线（补充板块） -->
+      <section class="block" id="timeline">
+        <div class="block-head">
+          <div class="kicker">Timeline</div>
+          <h2>口径变化时间线：10月以来的六个节点</h2>
+          <p>只收原始录音里能定位的原话，转述与推测不进来。</p>
+        </div>
+        <ul class="timeline">
+          <li><time datetime="2026-10-11">10月11日 · 夜航台 No.36</time><p>首次出现“在用”二字，原话“在用的就这一个”，未加解释。</p></li>
+          <li><time datetime="2026-10-18">10月18日 · 预告帖</time><p>排期说明提到“单账号操作”，未展开。次日场次因设备顺延。</p></li>
+          <li><time datetime="2026-10-25">10月25日 · 夜航台 No.38</time><p>连问两次，第一次答“就一个”，第二次补“在用的”。两答间隔 2 分 10 秒。</p></li>
+          <li><time datetime="2026-11-05">11月5日 · 连麦回应 No.29</time><p>41:20 改口，停顿 4 秒，由绝对表述退到状态表述。</p></li>
+          <li><time datetime="2026-11-07">11月7日 · 夜航台 No.41</time><p>03:12 否认，07:48 再答，措辞与 No.38 第二次回答一致。</p></li>
+          <li><time datetime="2026-11-07">11月7日 · 完整录音上线</time><p>94 分 12 秒版本公开，两次切换之间的过渡段首次可听。</p></li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side" aria-label="页内导航与说明">
+      <h2>页内导航</h2>
+      <nav id="sideNav" aria-label="侧栏导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选推荐</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#reviews">观众评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#rank">单期回看榜</a>
+        <a href="/#reco">相关推荐</a>
+        <a href="/#timeline">时间线</a>
+      </nav>
+      <div class="side-note">
+        <b>口径说明</b><br>
+        事实：可在原始录音定位的原话与时间点。<br>
+        回应：本人对提问的答复，含停顿与补句。<br>
+        转述：切片或评论中的概括，可能与原话有差。<br>
+        推测：无公开材料支撑的判断，单独标注。
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<!-- 页尾 -->
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#5a2f63"/>
+            <path d="M32 9l4.6 13.4L50 27l-13.4 4.6L32 45l-4.6-13.4L14 27l13.4-4.6z" fill="#e8b75a"/>
+          </svg>
+          <div>
+            <strong>丹祖宗女王vk</strong>
+            <span>公开内容追踪档案</span>
+          </div>
+        </div>
+        <p class="foot-pos">把原片时间点、切片差异与评论转述分开存放，争议项标出可核对的那一句。</p>
+      </div>
+      <div class="foot-col">
+        <h3>内容频道</h3>
+        <a href="/#picks">夜航台长录音</a>
+        <a href="/#picks">角色口播片段</a>
+        <a href="/#picks">连麦回应实录</a>
+        <a href="/#news">二创断句对比</a>
+      </div>
+      <div class="foot-col">
+        <h3>核对工具</h3>
+        <a href="/#deep">口径变化时间轴</a>
+        <a href="/#guide">开播日历</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#rank">单期回看榜</a>
+      </div>
+      <div class="foot-col">
+        <h3>数据说明</h3>
+        <a href="/#updates">更新记录</a>
+        <a href="/#reviews">评论分层</a>
+        <a href="/#reco">相关推荐</a>
+        <a href="/#timeline">时间线</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>示例数据说明：期数、时长、评论数、时间点均为演示用示例，非平台官方统计；引用原话以原始录音为准。</p>
+      <p>页面更新 2026-11-08 · 版权归原内容创作者所有</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var btnMenu = document.getElementById('btnMenu');
+  var navMain = document.getElementById('navMain');
+  if(btnMenu && navMain){
+    btnMenu.addEventListener('click', function(){
+      var open = navMain.classList.toggle('open');
+      btnMenu.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    navMain.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.matchMedia('(max-width:1000px)').matches){
+        navMain.classList.remove('open');
+        btnMenu.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 本地搜索 */
+  var input = document.getElementById('siteSearch');
+  var feedback = document.getElementById('searchFeedback');
+  var searchables = Array.prototype.slice.call(document.querySelectorAll('section.block'));
+  function runSearch(){
+    var q = (input.value || '').trim().toLowerCase();
+    if(!q){ feedback.classList.remove('on'); feedback.textContent=''; return; }
+    var hit = null;
+    for(var i=0;i<searchables.length;i++){
+      var sec = searchables[i];
+      var txt = (sec.textContent || '').toLowerCase();
+      if(txt.indexOf(q) !== -1){ hit = sec; break; }
+    }
+    if(hit){
+      var h = hit.querySelector('h2');
+      feedback.textContent = '找到：' + (h ? h.textContent.replace(/：.*/,'') : '相关板块');
+      feedback.classList.add('on');
+      feedback.style.color = 'var(--ok)';
+    } else {
+      feedback.textContent = '无匹配结果，换个期数或条目名试试';
+      feedback.classList.add('on');
+      feedback.style.color = 'var(--warn)';
+    }
+  }
+  if(input){
+    var t;
+    input.addEventListener('input', function(){
+      clearTimeout(t);
+      t = setTimeout(runSearch, 180);
+    });
+    input.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); runSearch(); }
+    });
+  }
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('toTop');
+  function onScroll(){
+    if(window.scrollY > 520){ toTop.classList.add('show'); }
+    else{ toTop.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 侧栏滚动高亮 */
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var targets = sideLinks.map(function(a){
+    var id = a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  });
+  function highlight(){
+    var pos = window.scrollY + 150;
+    var activeIdx = 0;
+    for(var i=0;i<targets.length;i++){
+      if(targets[i] && targets[i].offsetTop <= pos){ activeIdx = i; }
+    }
+    sideLinks.forEach(function(a, i){
+      a.classList.toggle('active', i === activeIdx);
+    });
+  }
+  window.addEventListener('scroll', highlight, {passive:true});
+  window.addEventListener('resize', highlight);
+  highlight();
+
+  /* 锚点平滑滚动（为吸顶预留偏移，CSS scroll-padding 已覆盖，此处兜底） */
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href^="/#"]');
+    if(!a) return;
+    var id = a.getAttribute('href').split('#')[1];
+    var el = document.getElementById(id);
+    if(!el) return;
+    e.preventDefault();
+    var offset = 96;
+    var y = el.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({top: y < 0 ? 0 : y, behavior: window.matchMedia('(prefers-reduced-motion:reduce)').matches ? 'auto' : 'smooth'});
+    history.replaceState(null, '', '/#' + id);
+    if(navMain && navMain.classList.contains('open')){
+      navMain.classList.remove('open');
+      if(btnMenu) btnMenu.setAttribute('aria-expanded','false');
+    }
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"丹祖宗女王vk",
+  "inLanguage":"zh-CN",
+  "description":"整理丹祖宗女王vk的公开视频节点、社区回应与二次剪辑差异的内容档案站点。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"《夜航台 No.41》完整版多长，和剪辑版差在哪？",
+      "acceptedAnswer":{"@type":"Answer","text":"完整录音 94 分 12 秒，剪辑版 43 分钟。差异集中在开场 14 分钟排期说明、6 处自我更正，以及 03:12 与 07:48 两次口径切换之间的过渡。"}
+    },
+    {
+      "@type":"Question",
+      "name":"连麦回应 No.29 的 41:20 到底说了什么？",
+      "acceptedAnswer":{"@type":"Answer","text":"先说没有第二账号，停顿约 4 秒，补为没有在用的第二账号。剪辑版剪掉了停顿。"}
+    },
+    {
+      "@type":"Question",
+      "name":"角色口播片段 No.18 的三个版本差在哪？",
+      "acceptedAnswer":{"@type":"Answer","text":"三个版本共 5 处措辞差异，主要在称呼和收尾句，固定开场结构未变。"}
+    },
+    {
+      "@type":"Question",
+      "name":"10月18日那场为什么顺延到19日？",
+      "acceptedAnswer":{"@type":"Answer","text":"设备问题。顺延通知补在原预告帖下，没有单独发帖。"}
+    },
+    {
+      "@type":"Question",
+      "name":"账号归属问题目前能确认到什么程度？",
+      "acceptedAnswer":{"@type":"Answer","text":"能确认的是措辞变化与限定词频次上升。存在备用账号仍属推测，没有公开材料支撑。"}
+    }
+  ]
+}
+</script>
+
+</body>
+  </html>
